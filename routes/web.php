@@ -14,64 +14,88 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// // returning a string
+// Route::get('/hello', function () {
+//     return "hello";
+// });
+
+// // returning html and a 200 status code
+// Route::get('/hello-2', function () {
+//     return response("<h1>hello</h1>");
+// });
+
+// // returning html and a 404 status code
+// Route::get('/hello-3', function () {
+//     return response("<h1>hello</h1>", 404);
+// });
+
+// // returning html as plain text, a 404 status code and a header
+// Route::get('/hello-4', function () {
+//     return response("<h1>hello</h1>", 200)
+//     ->header("Content-Type", "Text/plain");
+// });
+
+// // returning a custom header
+// Route::get('/hello-5', function () {
+//     return response("<h1>hello</h1>", 200)
+//     ->header("foo", "bar");
+// });
+
+// // handling wildcards
+// Route::get('/hello-6/{id}', function ($id) {
+//     return response("Post $id.");
+// });
+
+// // handling wildcards and using a constraint
+// // 404 for something else than a number
+// Route::get('/hello-7/{id}', function ($id) {
+//     return response("Post $id.");
+// })->where("id", "[0-9]+"); 
+
+// // handling request parameters
+// // http://localhost:8000/mysearch?name=brad&city=boston
+// // you need to import this for this route to work: use Illuminate\Http\Request;
+// Route::get('/mysearch', function (Request $request) {
+//     // dd($request);
+//     // dd("$request->name $request->city");
+
+//     return "$request->name $request->city";
+// });
+
+// // returning JSON
+// Route::get("/posts", function() {
+//     return response()->json([
+//         "posts" => 
+//         [
+//             "title" => "Post 1"
+//         ]
+//     ]);
+// });
+
+// basic view
 Route::get('/', function () {
-    return view('welcome');
+    return view('listings');
 });
 
-// returning a string
-Route::get('/hello', function () {
-    return "hello";
-});
-
-// returning html and a 200 status code
-Route::get('/hello-2', function () {
-    return response("<h1>hello</h1>");
-});
-
-// returning html and a 404 status code
-Route::get('/hello-3', function () {
-    return response("<h1>hello</h1>", 404);
-});
-
-// returning html as plain text, a 404 status code and a header
-Route::get('/hello-4', function () {
-    return response("<h1>hello</h1>", 200)
-    ->header("Content-Type", "Text/plain");
-});
-
-// returning a custom header
-Route::get('/hello-5', function () {
-    return response("<h1>hello</h1>", 200)
-    ->header("foo", "bar");
-});
-
-// handling wildcards
-Route::get('/hello-6/{id}', function ($id) {
-    return response("Post $id.");
-});
-
-// handling wildcards and using a constraint
-// 404 for something else than a number
-Route::get('/hello-7/{id}', function ($id) {
-    return response("Post $id.");
-})->where("id", "[0-9]+"); 
-
-// handling request parameters
-// http://localhost:8000/mysearch?name=brad&city=boston
-// you need to import this for this route to work: use Illuminate\Http\Request;
-Route::get('/mysearch', function (Request $request) {
-    // dd($request);
-    // dd("$request->name $request->city");
-
-    return "$request->name $request->city";
-});
-
-// returning JSON
-Route::get("/posts", function() {
-    return response()->json([
-        "posts" => 
-        [
-            "title" => "Post 1"
+// passing data to the view
+Route::get('/test', function () {
+    return view('test', [
+        "heading" => "Latest listings",
+        "listings" => [
+            [
+                "id" => 1,
+                "title" => "Listing one",
+                "description" => "Lorem ipsum"
+            ],
+            [
+                "id" => 2,
+                "title" => "Listing 2",
+                "description" => "Lorem ipsum"
+            ]
         ]
     ]);
 });
