@@ -7,3 +7,7 @@ This tutorial includes a whole lot of branches who represent the different steps
 - Laravel Blade Snippets by Winnie Lin
 - PHP Namespace Resolver by Mehedi Hassan
 - PHP Intelephense by Ben Mewburn
+
+## Time codes
+
+- 38.00. Creating models.
