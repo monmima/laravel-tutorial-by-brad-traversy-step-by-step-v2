@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Models\Listing;
 
 /*
 |--------------------------------------------------------------------------
@@ -77,25 +78,21 @@ use Illuminate\Support\Facades\Route;
 // });
 
 // basic view
+// Route::get('/', function () {
+//     return view('listings');
+// });
+
+// all listings
 Route::get('/', function () {
-    return view('listings');
+    return view('listings', [
+        "heading" => "Latest listings",
+        "listings" => Listing::all()
+    ]);
 });
 
-// passing data to the view
-Route::get('/test', function () {
-    return view('test', [
-        "heading" => "Latest listings",
-        "listings" => [
-            [
-                "id" => 1,
-                "title" => "Listing one",
-                "description" => "Lorem ipsum"
-            ],
-            [
-                "id" => 2,
-                "title" => "Listing 2",
-                "description" => "Lorem ipsum"
-            ]
-        ]
+// single listing
+Route::get('/listings/{id}', function ($id) {
+    return view('listing', [
+        "listing" => Listing::find($id)
     ]);
 });
