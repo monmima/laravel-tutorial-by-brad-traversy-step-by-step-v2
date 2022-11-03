@@ -11,3 +11,5 @@ This tutorial includes a whole lot of branches who represent the different steps
 ## Time codes
 
 - 38.00. Creating models.
+- 43.51. Setting up the database. The database was already set up in this project from the start.
+- 49.00. Using migrations.
