@@ -13,3 +13,8 @@ This tutorial includes a whole lot of branches who represent the different steps
 - 38.00. Creating models.
 - 43.51. Setting up the database. The database was already set up in this project from the start.
 - 49.00. Using migrations.
+- 58.00. Create eloquent model.
+
+        php artisan make:model Listing
+
+- 
