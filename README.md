@@ -27,3 +27,4 @@ This tutorial includes a whole lot of branches who represent the different steps
 
         php artisan migrate:refresh --seed
 
+- 01.07.30. Creating a layout for you site, the HTML that is going to be on every page of the site.
