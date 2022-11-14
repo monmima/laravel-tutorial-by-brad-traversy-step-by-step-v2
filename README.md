@@ -10,13 +10,18 @@ This tutorial includes a whole lot of branches who represent the different steps
 
 ## Time codes
 
-- 38.00. Creating models.
-- 43.51. Setting up the database. The database was already set up in this project from the start.
-- 49.00. Using migrations.
-- 58.00. Create eloquent model.
+- 00.38.00. Creating models.
+- 00.43.51. Setting up the database. The database was already set up in this project from the start.
+- 00.49.00. Using migrations.
+- 00.58.00. Create eloquent model.
 
         php artisan make:model Listing
 
 - 1.00.00. Adding static data with a seeder.
 
         php artisan migrate:refresh --seed
+
+- 1.03.00. Creating your own factory. Brad Traversy describes this as absolutely optional.
+
+        php artisan make:ListingFactory
+
