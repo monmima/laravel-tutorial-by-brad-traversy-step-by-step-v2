@@ -13,7 +13,7 @@ This tutorial includes a whole lot of branches who represent the different steps
 - 00.38.00. Creating models.
 - 00.43.51. Setting up the database. The database was already set up in this project from the start.
 - 00.49.00. Using migrations.
-- 00.58.00. Create eloquent model.
+- 00.58.00. Creating an eloquent model.
 
         php artisan make:model Listing
 
@@ -21,7 +21,9 @@ This tutorial includes a whole lot of branches who represent the different steps
 
         php artisan migrate:refresh --seed
 
-- 1.03.00. Creating your own factory. Brad Traversy describes this as absolutely optional.
+- 1.03.00. Creating your own factory. Brad Traversy describes this as absolutely optional. The first command create the factory, the second one refreshed the database once you have inserted the info about the factory you want to create.
 
-        php artisan make:ListingFactory
+        php artisan make:factory ListingFactory
+
+        php artisan migrate:refresh --seed
 
