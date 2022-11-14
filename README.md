@@ -17,4 +17,6 @@ This tutorial includes a whole lot of branches who represent the different steps
 
         php artisan make:model Listing
 
-- 
+- 1.00.00. Adding static data with a seeder.
+
+        php artisan migrate:refresh --seed
