@@ -1,55 +1,58 @@
 @extends('layout')
 
 @section('content')
-    {{-- php syntax --}}
+  <h2>{{ $heading }}</h2>
+  
+  <div class="lg:grid lg:grid-cols-2 gap-4 space-y-4 md:space-y-0 mx-4">
 
-    {{-- <h1>=== the PHP way ===</h1>
-    <h2><?= $heading ?></h2> --}}
+    @unless(count($listings) == 0)
 
-    {{-- <?php foreach ($listings as $listing): ?>
-        <h3><?= $listing["title"] ?></h3>
-        <p><?= $listing["description"] ?></p>
-    <?php endforeach; ?> --}}
+      @foreach ($listings as $listing)
+        <div class="bg-gray-50 border border-gray-200 rounded p-6">
+          <div class="flex">
+            <img
+              class="hidden w-48 mr-6 md:block"
+              src="images/acme.png"
+              alt=""
+            />
+            <div>
+              <h3 class="text-2xl">
+                <a href="/listings/{{ $listing->id }}">{{ $listing->title }}</a>
+              </h3>
+              <div class="text-xl font-bold mb-4">{{ $listing->company }}</div>
+              <ul class="flex">
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">Laravel</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">API</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">Backend</a>
+                </li>
+                <li
+                  class="flex items-center justify-center bg-black text-white rounded-xl py-1 px-3 mr-2 text-xs"
+                >
+                  <a href="#">Vue</a>
+                </li>
+              </ul>
+              <div class="text-lg mt-4">
+                <i class="fa-solid fa-location-dot"></i> {{ $listing->location }}
+              </div>
+            </div>
+          </div>
+        </div>
+      @endforeach
 
-    <!-- same, but with cleaner syntax -->
-
-    <h1>=== the Blade way ===</h1>
-    <h2>{{ $heading }}</h2>
-
-    @foreach ($listings as $listing)
-        <h3>
-            <a href="/listings/{{ $listing["id"] }}">{{ $listing["title"] }}</a>
-        </h3>
-        <p>{{ $listing["description"] }}</p>
-    @endforeach
-
-    {{-- php directive --}}
-
-    {{-- <hr>
-
-    <h1>=== php directive ===</h1>
-
-    @php
-        $test = "abcdef"
-    @endphp
-
-    <h6>{{ $test }}</h6>
-
-    <h1>=== if and else directives ===</h1>
-    
-    @if(count($listings) == 0)
-        <h6>No listings found.</h6>
     @else
-        <h6>Some listings found.</h6>
-    @endif
+      <div>nothing to show</div>
+    @endunless
 
-    <h1>=== unless directives ===</h1> --}}
-
-    {{-- unless is basically another way of writing if statements --}}
-
-    {{-- @unless(count($listings) == 0)
-        <h6>Some listings found.</h6>
-    @else
-        <h6>No listings found.</h6>
-    @endunless --}}
+  </div>
 @endsection

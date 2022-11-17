@@ -27,6 +27,10 @@ This tutorial includes a whole lot of branches who represent the different steps
 
         php artisan migrate:refresh --seed
 
-- 01.07.30. Creating a layout for you site, the HTML that is going to be on every page of the site.
+- 01.07.30. Creating a layout for you site, the HTML wrapper that is going to be on every page of the site.
 
-- 01.09.54. Creating a more advanced layout with prettier HTML.
+- 01.09.54. Creating a more advanced layout with prettier HTML. Working on listings.blade.php.
+
+===
+
+19.24
