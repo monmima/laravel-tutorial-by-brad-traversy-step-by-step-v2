@@ -32,3 +32,5 @@ This tutorial includes a whole lot of branches who represent the different steps
 - 01.09.54. Creating a more advanced layout with prettier HTML. Working on listings.blade.php.
 
 - 01.18.23. Loading an image with the asset helper.
+
+- 01.19.10. Adding the hero. Creating a partial.
