@@ -33,4 +33,6 @@ This tutorial includes a whole lot of branches who represent the different steps
 
 - 01.18.23. Loading an image with the asset helper.
 
-- 01.19.10. Adding the hero and search bar. Creating a partial.
+- 01.19.10. Adding the hero and search bar HTML. Creating a partial.
+
+- 01.23.00. Doing the single-listing formatting.
