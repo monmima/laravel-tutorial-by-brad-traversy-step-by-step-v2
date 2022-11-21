@@ -38,3 +38,5 @@ This tutorial includes a whole lot of branches who represent the different steps
 - 01.23.00. Doing the single-listing formatting.
 
 - 01.26.00. Handling non-existent IDs for existing routes or route-model binding.
+
+- 01.28.30. Creating components.
