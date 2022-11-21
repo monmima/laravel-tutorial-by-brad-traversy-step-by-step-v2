@@ -36,3 +36,5 @@ This tutorial includes a whole lot of branches who represent the different steps
 - 01.19.10. Adding the hero and search bar HTML. Creating a partial.
 
 - 01.23.00. Doing the single-listing formatting.
+
+- 01.26.00. Handling non-existent IDs for existing routes or route-model binding.
