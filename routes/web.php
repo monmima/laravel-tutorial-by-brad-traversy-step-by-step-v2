@@ -91,8 +91,28 @@ Route::get('/', function () {
 });
 
 // single listing
-Route::get('/listings/{id}', function ($id) {
+// Route::get('/listings/{id}', function ($id) {
+//     return view('listing', [
+//         "listing" => Listing::find($id)
+//     ]);
+// });
+
+// single listing + handling non-existent IDs
+// Route::get('/listings/{id}', function ($id) {
+//     $listing = Listing::find($id);
+
+//     if ($listing) {
+//         return view('listing', [
+//             "listing" => Listing::find($id)
+//         ]);
+//     } else {
+//         abort("404");
+//     }
+// });
+
+// single listing + handling non-existent IDs, the better way
+Route::get('/listings/{listing}', function (Listing $listing) {
     return view('listing', [
-        "listing" => Listing::find($id)
+        "listing" => $listing
     ]);
 });
