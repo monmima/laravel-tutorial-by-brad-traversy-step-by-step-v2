@@ -44,3 +44,5 @@ This tutorial includes a whole lot of branches who represent the different steps
 - 01.30.45. Creating a component with a slot.
 
 - 01.32.00. Creating a component with a slot.
+
+- 01.32.30. Creating a component with a slot and a dynamic class.
