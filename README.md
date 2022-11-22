@@ -39,4 +39,8 @@ This tutorial includes a whole lot of branches who represent the different steps
 
 - 01.26.00. Handling non-existent IDs for existing routes or route-model binding.
 
-- 01.28.30. Creating components and using props.
+- 01.28.30. Creating a component and using props.
+
+- 01.30.45. Creating a component with a slot.
+
+- 01.32.00. Creating a component with a slot.
