@@ -10,39 +10,38 @@ This tutorial includes a whole lot of branches who represent the different steps
 
 ## Time codes
 
-- 00.38.00. Creating models.
-- 00.43.51. Setting up the database. The database was already set up in this project from the start.
-- 00.49.00. Using migrations.
-- 00.58.00. Creating an eloquent model.
+1. ??.??.??. Routing.
+1. 00.38.00. Creating models.
+1. 00.43.51. Setting up the database. The database was already set up in this project from the start.
+1. 00.49.00. Using migrations.
+1. 00.58.00. Creating an eloquent model.
 
         php artisan make:model Listing
 
-- 1.00.00. Adding static data with a seeder.
+1. 1.00.00. Adding static data with a seeder.
 
         php artisan migrate:refresh --seed
 
-- 1.03.00. Creating your own factory. Brad Traversy describes this as absolutely optional. The first command create the factory, the second one refreshed the database once you have inserted the info about the factory you want to create.
+1. 1.03.00. Creating your own factory. Brad Traversy describes this as absolutely optional. The first command create the factory, the second one refreshed the database once you have inserted the info about the factory you want to create.
 
         php artisan make:factory ListingFactory
 
         php artisan migrate:refresh --seed
 
-- 01.07.30. Creating a layout for you site, the HTML wrapper that is going to be on every page of the site.
+1. 01.07.30. Creating a layout for you site, the HTML wrapper that is going to be on every page of the site.
 
-- 01.09.54. Creating a more advanced layout with prettier HTML. Working on listings.blade.php.
+1. 01.09.54. Creating a more advanced layout with prettier HTML. Working on listings.blade.php.
 
-- 01.18.23. Loading an image with the asset helper.
+1. 01.18.23. Loading an image with the asset helper.
 
-- 01.19.10. Adding the hero and search bar HTML. Creating a partial.
+1. 01.19.10. Adding the hero and search bar HTML. Creating a partial.
 
-- 01.23.00. Doing the single-listing formatting.
+1. 01.23.00. Doing the single-listing formatting.
 
-- 01.26.00. Handling non-existent IDs for existing routes or route-model binding.
+1. 01.26.00. Handling non-existent IDs for existing routes or route-model binding.
 
-- 01.28.30. Creating a component and using props.
+1. 01.28.30. Creating a component and using props.
 
-- 01.30.45. Creating a component with a slot.
+1. 01.30.45. Creating a component with a slot.
 
-- 01.32.00. Creating a component with a slot.
-
-- 01.32.30. Creating a component with a slot and a dynamic class.
+1. 01.32.30. Creating a component with a slot and a dynamic class.
