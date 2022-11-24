@@ -44,6 +44,6 @@ This tutorial includes a whole lot of branches who represent the different steps
 
 1. 01.30.45. Creating a component with a slot.
 
-1. 01.32.30. Creating a component with a slot and a dynamic class.
+1. 01.32.30. Creating a component with a dynamic class that you pass.
 
 1. 01.35.15. Creating a component for the tags.
