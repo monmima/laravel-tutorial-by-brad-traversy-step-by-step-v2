@@ -49,3 +49,5 @@ This tutorial includes a whole lot of branches who represent the different steps
 1. 01.35.15. Creating a component for the tags.
 
 1. 01.40.30. Separating routes and controllers.
+
+        php artisan make:controller ListingController -r
