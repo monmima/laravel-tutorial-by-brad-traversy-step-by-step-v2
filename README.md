@@ -52,4 +52,4 @@ This tutorial includes a whole lot of branches who represent the different steps
 
         php artisan make:controller ListingController -r
 
-1. 01.45.25. Create folder for listing views.
+1. 01.45.25. Create folder for listing views and link to new folder.
