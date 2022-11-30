@@ -53,7 +53,9 @@ This tutorial includes a whole lot of branches who represent the different steps
         php artisan make:controller ListingController -r
 
 1. 01.45.25. Create folder for listing views and link to new folder.
-
+ 
 1. 01.46.30. Turn layout into actual component and avoid having to extend layout in each view. You don't have to do this. There is no "better" way. Basically, using $slot instead of @yield.
 
-1. 01.49.00. Filtering tags.
+1. 01.49.00. Filtering tags with tag links. There are many ways to do this. Brad Traversy uses a scope filter. Make sure you have different tags for different listings or the filtering won't really be visible.
+
+1. 01.57.30. Filtering tags with search bar.

@@ -12,10 +12,13 @@ class ListingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        // dumping data
+        // dd($request->tag);
+
         return view('listings.index', [
-            "listings" => Listing::all()
+            "listings" => Listing::latest()->filter(request(['tag']))->get()
         ]);
     }
 
