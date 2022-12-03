@@ -59,3 +59,7 @@ This tutorial includes a whole lot of branches who represent the different steps
 1. 01.49.00. Filtering tags with tag links. There are many ways to do this. Brad Traversy uses a scope filter. Make sure you have different tags for different listings or the filtering won't really be visible.
 
 1. 01.57.30. Filtering tags with search bar.
+
+1. 02.04.00. Create a create form (route + controller + view).
+
+1. 02.10.45. Submit content of the file to the store.

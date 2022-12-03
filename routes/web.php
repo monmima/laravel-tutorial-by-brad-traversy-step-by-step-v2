@@ -83,9 +83,6 @@ use App\Http\Controllers\ListingController;
 //     return view('listings');
 // });
 
-// all listings
-Route::get('/', [ListingController::class, "index"]);
-
 // single listing
 // Route::get('/listings/{id}', function ($id) {
 //     return view('listing', [
@@ -106,5 +103,12 @@ Route::get('/', [ListingController::class, "index"]);
 //     }
 // });
 
-// single listing + handling non-existent IDs, the better way
+// all listings
+Route::get('/', [ListingController::class, "index"]);
+
+// show create form
+Route::get('/listings/{create}', [ListingController::class, "create"]);
+
+// single listing; watch out! this route has to be at the bottom!
 Route::get('/listings/{listing}', [ListingController::class, "show"]);
+
