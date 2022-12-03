@@ -13,7 +13,7 @@ class Listing extends Model
         // dd($filters['tag']);
 
         if ($filters['tag'] ?? false) {
-            $query->where("tags", "like", "%" . request("tag") . "");
+            $query->where("tags", "like", "%" . request("tag") . "%");
         }
     }
 }
