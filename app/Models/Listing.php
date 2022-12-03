@@ -10,9 +10,8 @@ class Listing extends Model
     use HasFactory;
 
     public function scopeFilter($query, array $filters) {
-        // dd($filters['tag']);
-
-        if ($filters['tag'] ?? false) {
+        // if this is not false (if there is a tag), then move on
+        if ($filters["tag"] ?? false) {
             $query->where("tags", "like", "%" . request("tag") . "%");
         }
     }
