@@ -62,4 +62,6 @@ This tutorial includes a whole lot of branches who represent the different steps
 
 1. 02.04.00. Create a create form (route + controller + view).
 
-1. 02.10.45. Submit content of the create form to the store.
+1. 02.10.45. Handle logic for create form.
+
+1. 02.27.00. Creating a flash message. This is the confirmation message after a form has been submitted.
