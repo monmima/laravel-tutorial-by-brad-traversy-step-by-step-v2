@@ -67,3 +67,5 @@ This tutorial includes a whole lot of branches who represent the different steps
 1. 02.27.00. Creating a flash message. This is the confirmation message after a form has been submitted.
 
 1. 02.36.30. Remembering data when there is an error with the form.
+
+1. 02.38.30. Pagination.

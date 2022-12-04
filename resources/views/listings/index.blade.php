@@ -12,8 +12,12 @@
         @endforeach
 
       @else
-        <div>nothing to show</div>
+        <div>No listings found</div>
       @endunless
 
+    </div>
+
+    <div class="mt-6 p-4">
+      {{ $listings->links() }}
     </div>
 </x-layout>
