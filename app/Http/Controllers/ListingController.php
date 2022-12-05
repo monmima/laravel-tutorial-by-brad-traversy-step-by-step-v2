@@ -41,17 +41,24 @@ class ListingController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
-
         $formFields = $request->validate([
             "title" => "required",
             "company" => "required", Rule::unique("listing", "company"),
             "location" => "required",
-            "website" => "required",
+            "website" => "required", 
             "email" => ["required", "email"],
             "tags" => "required",
             "description" => "required"
         ]);
+
+        // if($request->hasFile('logo')) {
+        //     $formFields['logo'] = $request->file('logo')->store('logos', 'public');
+        // }
+
+
+        if ($request->hasFile("logo")) {
+            $formFields["logo"] = $request->file("logo")->store("logos", "public");
+        }
 
         Listing::create($formFields);
 

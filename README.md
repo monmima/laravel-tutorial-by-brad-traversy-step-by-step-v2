@@ -70,4 +70,7 @@ This tutorial includes a whole lot of branches who represent the different steps
 
 1. 02.38.30. Pagination. Pagination uses Tailwind by default but can use other CSS frameworks with artisan commands.
 
-1. 02.45.15. Uploading file.
+1. 02.45.15. Uploading file. You'll have to use these commands to reseed the database and then create a link between folders.
+
+        php artisan migrate:refresh --seed
+        php artisan storage:link
