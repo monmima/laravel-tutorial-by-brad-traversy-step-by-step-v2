@@ -75,4 +75,6 @@ This tutorial includes a whole lot of branches who represent the different steps
         php artisan migrate:refresh --seed
         php artisan storage:link
 
-1. 02.57.30. Showing the edit file.
+1. 02.57.30. Showing and editing a record.
+
+1. 03.09.15. Add delete form to app.
