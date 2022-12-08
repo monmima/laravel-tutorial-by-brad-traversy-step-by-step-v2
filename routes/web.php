@@ -128,6 +128,7 @@ Route::get('/listings/{listing}', [ListingController::class, "show"]);
 // show register create form
 Route::get('/register', [UserController::class, "create"]);
 
-
+// create new user
+Route::get('/users', [UserController::class, "store"]);
 
 
