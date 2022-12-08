@@ -118,6 +118,9 @@ Route::get("/listings/{listing}/edit", [ListingController::class, "edit"]);
 // update form
 Route::put("/listings/{listing}", [ListingController::class, "update"]);
 
+// delete form
+Route::delete("/listings/{listing}", [ListingController::class, "destroy"]);
+
 // single listing; watch out! this route has to be at the bottom!
 Route::get('/listings/{listing}', [ListingController::class, "show"]);
 

@@ -78,3 +78,5 @@ This tutorial includes a whole lot of branches who represent the different steps
 1. 02.57.30. Showing and editing a record.
 
 1. 03.09.15. Add delete form to app.
+
+1. 03.13.30. User authentification starts here. Handling register route and view.

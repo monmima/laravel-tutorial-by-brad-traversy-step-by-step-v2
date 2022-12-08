@@ -108,7 +108,6 @@ class ListingController extends Controller
             "description" => "required"
         ]);
 
-
         if ($request->hasFile("logo")) {
             $formFields["logo"] = $request->file("logo")->store("logos", "public");
         }
@@ -124,9 +123,10 @@ class ListingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Listing $listing)
     {
-        //
+        $listing->delete();
+        return redirect('/')->with('message', 'Listing deleted sucessfully');
     }
 
 
