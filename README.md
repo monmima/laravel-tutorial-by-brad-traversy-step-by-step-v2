@@ -80,3 +80,7 @@ This tutorial includes a whole lot of branches who represent the different steps
 1. 03.09.15. Add delete form to app.
 
 1. 03.13.30. User authentification starts here. Handling register route and view.
+
+        php artisan make:controller UserController -r
+
+1. 03.20.30. Handling the submission of the form.
