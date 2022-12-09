@@ -87,3 +87,6 @@ This tutorial includes a whole lot of branches who represent the different steps
 
 1. 03.30.15. Change links when user connected.
 
+1. 03.33.15. Add log out functionality.
+
+1. 03.37.19. Add log in funtionality.
