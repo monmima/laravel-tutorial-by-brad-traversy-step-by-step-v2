@@ -89,4 +89,6 @@ This tutorial includes a whole lot of branches who represent the different steps
 
 1. 03.33.15. Add log out functionality.
 
-1. 03.37.15. Add log in funtionality.
+1. 03.37.15. Show log in form.
+
+1. 03.41.00.  Handle form submission on log in view.
