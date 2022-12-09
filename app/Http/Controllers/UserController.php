@@ -116,4 +116,23 @@ class UserController extends Controller
     {
         return view('users.login');
     }
+
+    // authenticate user
+    public function authenticate(Request $request)
+    {
+        $formFields = $request->validate([
+            "email" => ["required", "email"],
+            "password" => ["required"]
+        ]);
+
+        if (auth()->attempt($formFields)) {
+            // regenerate session ID
+            $request->session()->regenerate();
+
+            return redirect('/')->with('message', 'You have are now logged in!');
+        }
+
+        // you don't want the user to know if the name or password was the thing that generated the error, so you just use thhis
+        return back()->withErrors(['email' => 'Invalid credentials'])->onlyInput('email');
+    }
 }

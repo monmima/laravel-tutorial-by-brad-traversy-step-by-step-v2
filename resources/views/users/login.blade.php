@@ -7,7 +7,7 @@
           <p class="mb-4">Log into your account</p>
       </header>
   
-      <form methods="POST" action="/users/login">
+      <form methods="POST" action="/users/authenticate">
         @csrf
 
     
