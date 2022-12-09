@@ -84,3 +84,6 @@ This tutorial includes a whole lot of branches who represent the different steps
         php artisan make:controller UserController -r
 
 1. 03.20.30. Handling the submission of the form.
+
+1. 03.30.15. Change links when user connected.
+
