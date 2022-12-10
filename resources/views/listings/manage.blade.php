@@ -71,5 +71,5 @@
         </tr>
       </tbody>
     </table>
-  </div>
+  </x-card>
 </x-layout>
