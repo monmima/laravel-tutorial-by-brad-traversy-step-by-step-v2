@@ -132,5 +132,9 @@ class ListingController extends Controller
         return redirect('/')->with('message', 'Listing deleted sucessfully');
     }
 
-
+    // manage listings
+    public function manage() {
+        // auth()->user gives you the logged in user
+        return view('listings.manage', ['listings' => auth()->user()->listings()->get()]);
+    }
 }
