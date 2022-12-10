@@ -106,4 +106,5 @@ This tutorial includes a whole lot of branches who represent the different steps
  
 1. 04.05.45. Create route for /listings/manage.
 
+1. 04.14.10. Allow users only to delete their own posts.
   
