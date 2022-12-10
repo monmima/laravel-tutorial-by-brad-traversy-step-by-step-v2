@@ -95,4 +95,15 @@ This tutorial includes a whole lot of branches who represent the different steps
 
 1. 03.47.00. Creating a relationship between user and listings. For instance, only allowing logged in users to create a new listing. This is basically protecting routes.
 
-1. 03.51.30. Creating a relationship between listings and users.
+1. 03.51.30. Creating a relationship between listings and users. The following command creates one user in the database.
+
+        php artisan migrate:refresh --seed
+
+    Tinker is a command line tool that allows you to do pretty much anything you can within your code.
+
+        php artisan tinker
+        \App\Models\Users::first(); 
+ 
+1. 04.05.45. Create route for /listings/manage.
+
+  
