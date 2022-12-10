@@ -92,3 +92,7 @@ This tutorial includes a whole lot of branches who represent the different steps
 1. 03.37.15. Show log in form.
 
 1. 03.41.00. Handle form submission on log in view.
+
+1. 03.47.00. Creating a relationship between user and listings. For instance, only allowing logged in users to create a new listing. This is basically protecting routes.
+
+1. 03.51.30. Creating a relationship between listings and users.
