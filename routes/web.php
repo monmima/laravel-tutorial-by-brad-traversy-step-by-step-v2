@@ -108,7 +108,7 @@ use App\Http\Controllers\ListingController;
 Route::get('/', [ListingController::class, "index"]);
 
 // manage listings
-Route::get('/listings/manage', [UserController::class, "authenticate"])->middleware('auth');
+Route::get("/listings/manage", [ListingController::class, "manage"])->middleware("auth");
 
 // show create form
 Route::get('/listings/create', [ListingController::class, "create"])->middleware('auth');
